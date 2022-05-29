@@ -1,4 +1,4 @@
-from django.urls import path
+from familiares.urls import path
 
 from personas.views import personas
 
