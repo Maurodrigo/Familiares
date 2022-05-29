@@ -5,4 +5,4 @@ from personas.models import Personas
 def personas(request):
         productos = Personas.objects.all()
         context = {'personas':personas}
-        return render(request, 'personas.html', context=context)
+        return render(request, 'familiares.html', context=context)
