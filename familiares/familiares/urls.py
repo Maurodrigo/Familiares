@@ -1,8 +1,8 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from familiares.views import familiar
 
 urlpatterns = [
-    path('familia/', familiar, name = 'familiar'),
+    path('familia/', include('personas.urls')),
     path('admin/', admin.site.urls),
 ]
